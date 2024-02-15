@@ -147,7 +147,7 @@ body {
     color: var(--branca);
 }
 
-@media (max-width:1200px) {
+@media (max-width:320px) {
  
     .cabecalho {
         padding: 10%;
