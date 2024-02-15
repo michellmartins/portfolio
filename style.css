@@ -68,14 +68,15 @@ body {
 
 .titulo {
     font-size: 2.25rem;
-    font-family: var(--fonte-primaria)
+    font-family: var(--fonte-primaria);
+    text-align: justify;
 
 }
 
 
 .texto {
     font-size: 1.5rem;
-    text-align: left;
+    text-align: justify;
     color: var(--branca);
     font-family: var(--fonte-secundaria)
 }
@@ -84,9 +85,8 @@ body {
 .foto {
     border: 1px solid var(--azul);
     border-radius: 10px;
-    width: 50%;
-
-}
+    width: 30%;
+   }
 
 
 .titulo-destaque {
