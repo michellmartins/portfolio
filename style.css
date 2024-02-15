@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@font-face {
+    font-family: 'trans';
+    src: url(./Fonte/BumbleBee.otf);
+}
+
+:root {
+    --preta: #000000;
+    --branca: #f6f6f6;
+    --azul: #22D4FD;
+    --hover: #272727;
+
+    /* Fontes */
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    box-sizing: border-box;
+    background: var(--preta);
+    color: var(--branca);   
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+
+}
+
+.topico {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 82px;
+}
+
+
+.conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria)
+
+}
+
+
+.texto {
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--branca);
+    font-family: var(--fonte-secundaria)
+}
+
+
+.foto {
+    border: 1px solid var(--azul);
+    border-radius: 10px;
+    width: 50%;
+
+}
+
+
+.titulo-destaque {
+    color: var(--azul);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+.botoes {
+    border: 2px solid var(--azul);
+    border-radius: 8px;
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--branca);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.botoes:hover {
+    background-color: var(--hover)
+}
+
+.rodape {
+    background: var(--azul);
+    text-align: center;
+    color: var(--preta);
+    width: 100%;
+    padding: 24px 713px 23.64px 24px;
+    font-family: 'trans';
+    font-size: 1.5rem;
+    font-weight: 400;
+
+
+}
+
+.rodape:hover {
+    background-color: var(--preta);
+    color: var(--branca);
+}
+
+@media (max-width:1200px) {
+ 
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .menu {
+        justify-content: center;
+        
+    }
+   .apresentacao {
+        flex-direction: column-reverse;  
+        padding: 5%;
+    }
+    .apresentacao_conteudo {
+        width: auto;
+    }
+
+
+}
